@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    font-family: 'Recursive', sans-serif;
+}
+
+.container
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: dimgray;
+}
+
+.content
+{
+    background-color: white;
+    border-radius: 15px;   
+    width: 65%;
+    height: 59%;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.content::before
+{
+    content: "";
+    position: relative;
+    background-color: #0554a0;
+    width: 40%;
+    height: 100%;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title
+{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.title-pri
+{
+    color: white;
+}
+
+.title-sec
+{
+    color: #0554a0;
+}
+
+.description
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+}
+
+.description-pri
+{
+    color: white;
+}
+
+.description-sec
+{
+    color: gray;
+}
+
+.btn
+{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #0554a0;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.btn-primary
+{
+    background-color: transparent;
+    border: 1px solid #0554a0;
+}
+
+.btn-primary:hover
+{
+    background-color: #0554a0;
+    color: white;
+}
+
+.first-content
+{
+    display: flex;
+}
+
+.first-colum
+{
+    text-align: center;
+    flex: 1 0 auto;
+    z-index: 10;
+}
+
+.second-colum
+{
+    display: flex;
+    flex: 2 0 auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form
+{
+    display: flex;
+    flex-direction: column;
+    width: 55%;
+}
+
+.password
+{
+    color: gray;
+    font-size: 14px;
+    text-align: center;
+}
+
+.form input
+{
+    height: 45px;
+    border: none;
+    background-color: #ecf0f1;
+    width: 100%;
+    outline: 0;
+}
+
+.label-input
+{
+    background-color: #ecf0f1;
+    display: flex;
+    align-items: center;
+    margin: 8px;
+}
+
+.icon-modify
+{
+    color: gray;
+    padding: 0 5px;
+}

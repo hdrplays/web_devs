@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Recursive&display=swap');
+*
+{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.btn
+{
+    border-radius: 15px;
+    text-transform: uppercase;
+    color: #0554a0;
+    font-size: 10px;
+    padding: 10px 50px;
+    cursor: pointer;
+    font-weight: bold;
+    align-self: center;
+    margin-top: 1rem;
+}
+
+.btn-primary
+{
+    background-color: transparent;
+    border: 1px solid #0554a0;
+}
+
+.btn-primary:hover
+{
+    background-color: #0554a0;
+    color: white;
+}
+
+.input
+{
+    border: solid 2px #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.buttonmg
+{
+    margin-top: 20px;
+}
+
+.title
+{
+    font-size: 28px;
+    font-weight: bold;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+.title-sec
+{
+    color: #0554a0;
+}
+
+.colunas
+{
+    background-color: #79a7c6;
+}
+
+.icon
+{
+    margin-bottom: 10px;
+}
+
+.container
+{
+    justify-content: center;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+.labels
+{
+    margin-bottom: 5px;
+}
+
+#listaRegistros{ display: none; }
+        #cadastroRegistro{
+            display: none;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        body[page=lista] #listaRegistros{ display: block; }
+        body[page=cadastro] #cadastroRegistro{ display: flex; }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin-top: 0;
+            padding: 10px;
+        }
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table th,
+        table td{
+            font-size: 14px;
+            padding: 10px 10px;
+            border: solid 2px #ccc;
+        }
+
+        button{
+            border-radius: 15px;
+            text-transform: uppercase;
+            color: #0554a0;
+            font-size: 10px;
+            padding: 10px 50px;
+            cursor: pointer;
+            font-weight: bold;
+            align-self: center;
+        }
+        button.cinza{
+            background-color: #ccc;
+            color: #666;
+        }
+        button.vermelho{
+            background-color: #0554a0;
+            color: white;
+        }
+        button:hover{
+            opacity: 0.8;
+            background-color: #0554a0;
+            color: white;
+        }
+
+        input{
+            border: solid 1px #ccc;
+            border-radius: 4px;
+            padding: 10px;
+        }
+
+        .label>div{
+            display: flex;
+        }
+        .label>div>input{
+            flex: 1;
+        }

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posts</title>
+    <link rel="stylesheet" href="css/control.css">
+    <script type='text/javascript' src="js/control.js"></script>
+    <script src="https://kit.fontawesome.com/70f799dfe2.js" crossorigin="anonymous"></script> 
+</head>
+
+<body page='lista'>
+    
+    <div id='listaRegistros'>
+
+        <h2 class="title title-sec">Gestão de Desenvolvedores</h2>
+        <label class="label-input" for="" style="padding-right: 70%;">
+            <i class="fas fa-user icon-modify"></i>
+            <input type="user" placeholder="Bem Vindo, Gestor" style="border: none; font-size: 14px; outline: 0;" readonly>
+        </label>
+        
+        <div style='display: flex;;padding-right: 70%;'>
+            <input style='flex:1;' placeholder="PESQUISAR" autofocus id='inputPesquisa' />
+        </div>
+
+        <table>
+            <thead>
+                <tr class="colunas">
+                    <th>ID</th>
+                    <th>Nome</th>
+                    <th>Sexo</th>
+                    <th>Idade</th>
+                    <th>Data de Aniversario</th>
+                    <th>Hobby</th>
+                </tr>
+            </thead>
+            <tbody id='listaRegistrosBody'></tbody>
+        </table>
+
+        <div>
+            <button class="buttonmg" onclick="vizualizar('cadastro', true)">Novo post</button>
+        </div>
+
+
+    </div>
+
+    <form id='cadastroRegistro'>
+
+        <h2 class="title title-sec">Gestão de Desenvolvedores</h2>
+
+        <div class="container">
+            <div class='label'>
+                <div>ID</div>
+                <div>
+                    <input class="input" type='number' readonly id='id' />
+                </div>
+            </div>
+    
+            <div class="label">
+                <div>Nome</div>
+                <div>
+                    <input class="input" type="text" id='name' required/>
+                </div>
+            </div>
+    
+            <div class="label">
+                <div>Sexo</div>
+                <div>
+                    <input class="input" type="text" id='sexo' required/>
+                </div>
+            </div>
+
+            <div class='label'>
+                <div>Idade</div>
+                <div>
+                    <input class="input" type='number' id='idade' required/>
+                </div>
+            </div>
+
+            <div class="label">
+                <div>Data de Aniversario</div>
+                <div>
+                    <input class="input" type="date" id='datanascimento' required/>
+                </div>
+            </div>
+    
+            <div class="label">
+                <div>Hobby</div>
+                <div>
+                    <input class="input" type="text" id='hobby' required/>
+                </div>
+            </div>
+
+            <div style="float: right;">
+                <button onclick="vizualizar('lista')" class="cinza" type='button'>Cancelar</button>
+                <button>Salvar</button>
+            </div>
+        </div>
+
+    </form>
+
+</body>
+</html>
